@@ -4,7 +4,7 @@ namespace Upgradelabs\ReduniqLaravel\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Upgradelabs\ReduniqLaravel\ReduniqServiceProvider;
+use Upgradelabs\Reduniq\ReduniqServiceProvider;
 
 class TestCase extends Orchestra
 {
