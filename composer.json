@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0"
+        "illuminate/contracts": "^10.0||^11.0",
+        "saloonphp/saloon": "^3.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -34,8 +35,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Upgradelabs\\ReduniqLaravel\\": "src/",
-            "Upgradelabs\\ReduniqLaravel\\Database\\Factories\\": "database/factories/"
+            "Upgradelabs\\Reduniq\\": "src/",
+            "Upgradelabs\\Reduniq\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
@@ -72,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Upgradelabs\\ReduniqLaravel\\ReduniqLaravelServiceProvider"
+                "ReduniqServiceProvider"
             ],
             "aliases": {
-                "ReduniqLaravel": "Upgradelabs\\ReduniqLaravel\\Facades\\ReduniqLaravel"
+                "Reduniq": "Reduniq"
             }
         }
     },

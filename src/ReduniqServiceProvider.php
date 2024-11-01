@@ -1,12 +1,12 @@
 <?php
 
-namespace Upgradelabs\ReduniqLaravel;
+namespace Upgradelabs\Reduniq;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Upgradelabs\ReduniqLaravel\Commands\ReduniqLaravelCommand;
+use Upgradelabs\ReduniqLaravel\Commands\ReduniqCommand;
 
-class ReduniqLaravelServiceProvider extends PackageServiceProvider
+class ReduniqServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -19,7 +19,7 @@ class ReduniqLaravelServiceProvider extends PackageServiceProvider
             ->name('reduniq-laravel')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_reduniq_laravel_table')
-            ->hasCommand(ReduniqLaravelCommand::class);
+            ->hasMigration('create_reduniq_table')
+            ->hasCommand(ReduniqCommand::class);
     }
 }

@@ -4,7 +4,7 @@ namespace Upgradelabs\ReduniqLaravel\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Upgradelabs\ReduniqLaravel\ReduniqLaravelServiceProvider;
+use Upgradelabs\ReduniqLaravel\ReduniqServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -20,7 +20,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            ReduniqLaravelServiceProvider::class,
+            ReduniqServiceProvider::class,
         ];
     }
 

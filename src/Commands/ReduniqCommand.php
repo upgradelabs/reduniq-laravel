@@ -4,7 +4,7 @@ namespace Upgradelabs\ReduniqLaravel\Commands;
 
 use Illuminate\Console\Command;
 
-class ReduniqLaravelCommand extends Command
+class ReduniqCommand extends Command
 {
     public $signature = 'reduniq-laravel';
 
