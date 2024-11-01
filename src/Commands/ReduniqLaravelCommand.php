@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Upgradelabs\ReduniqLaravel\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ReduniqLaravelCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'reduniq-laravel';
 
     public $description = 'My command';
 
